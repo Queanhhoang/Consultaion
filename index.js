@@ -190,7 +190,7 @@ function printOutput(TDEE, BMI, gender, age) {
     
     
     // if (age>=3 && age<=18) {
-    //     age_menu="Kid";
+    //     age_menu="Trẻ ";
     //     if(age>=13 && age<=18){
     //         age_menu="Teenage"
     //         value="Đây là tuổi dậy thì nên dinh dưỡng buổi sáng là cần: Uống đủ nước, tăng cường vận động thể thao ngoài trời, ngủ sớm và đủ giấc, bổ sung các loại vitamin <br/> Tăng cường canxi cho trẻ bằng thực phẩm hoặc viên uống"
