@@ -149,7 +149,7 @@ function printOutput(TDEE, BMI, gender, age) {
         BMI_RANGE = "obese";
     }
     if (age >= 3 && age <= 18) {
-        age_menu = "Kid";
+        age_menu = "Trẻ em";
     
         if (age >= 13 && age <= 18) {
             age_menu = "Teenage";
