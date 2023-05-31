@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TDEE Calculator</title>
+    </head>
+
+    <body>
+        <header>
+            <div id="header">
+                <ul id="nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Consult</a></li>
+                    <li><a href="">Order</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">FAQS</a></li>
+                    <li><a href="">Profile</a></li>
+                </ul>
+                <div class="search_btn">
+                    <i class="search-icon fa-solid fa-magnifying-glass"></i>
+                </div>
+        </header>
+        <div id="inputsContainer">
+            <table>
+                <tr style="text-align: center;">
+                    <td>
+                        <h1>TDEE Calculator</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Giới tính: </label>
+                        <select id="gender">
+                            <option value="M">Nam</option>
+                            <option value="F">Nữ</option>
+                        </select>
+            
+                        <br/>
+                        <label for="age">Tuổi: </label>
+                        <input type="number" id="age" min="0" max="999" required>
+            
+                        <br/>
+                        <label for="weight">Cân nặng: </label>
+                        <input type="number" id="weight" min="0" max="999" required>
+                        <select id="weightUnit">
+                            <option value="LBS">lbs</option>
+                            <option value="KG">kg</option>
+                        </select>
+            
+                        <br/>
+                        <label for="height">Chiều cao: </label>
+                        <input type="number" id="height" min="0" max="999" required>
+                        <select id="heightUnit">
+                            <option value="IN">in</option>
+                            <option value="CM">cm</option>
+                        </select>
+            
+                        <br/>
+                        <label for="activityLevel">Cường độ tập luyện : </label>
+                        <select id="activityLevel">
+                            <option value="1.2">Ít hoạt động (chỉ ăn đi làm về ngủ)</option>
+                            <option value="1.375">Có vận động nhẹ (1-2 ngày/tuần)</option>
+                            <option value="1.55">Có vận động vừa (3-5 ngày/tuần)</option>
+                            <option value="1.725">Có vận động nhiều (6-7 ngày/tuần)</option>
+                            <option value="1.9">Vận động rất nhiều (2 lần mỗi ngày)</option>
+                        </select>
+            
+                        <br/>
+                        <label for="bf">Dị ứng </label>
+                        <select>
+                            <option value="">Gà</option>
+                            <option value="">Cá</option>
+                            <option value="">Heo</option>
+                            <option value="">Đậu phộng</option>
+                        </select> 
+                        <br>
+                        <label for="bf">Mỡ cơ thể </label>
+                        <input type="" id="bodyFatPercent"  min="0" max="100">% 
+                    </td>
+                </tr>
+
+                <tr style="text-align:center">
+                    <td>
+                        <div id="submitBtnBox">
+                            <br/>
+                            <button type="submit" id="submitBtn">Calculate TDEE</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- <div id="girl" >
+            
+        </div> -->
+        <div id="infoContainer">
+            
+        </div>
+
+        <div id="resultsContainer"></div>
+
+        <script src="index.js"></script> 
+        <div class="screen">
+            <h1 id="qu">Menu</h1> <br/> <br/>
+            <ul class="insects-list">
+            <li>
+            <button class="choose-insect-btn kid">
+                <p>KID</p>
+                <img src="" alt="fly">
+                <div class="subcons one">Thành phần:<br> Chicken <br>Corn</div>
+            </button>
+            
+            </li>
+            <li>
+                <button class="choose-insect-btn teenage">
+                    <p>TEENAGE</p>
+                    <img src="" alt="fly">
+                    <div class="subcons one+">Thành phần:<br> Chicken <br>Corn</div>
+                </button>
+            </li>
+            <li>
+            <button class="choose-insect-btn adult">
+                <p>ADULT</p>
+                <img
+                    src="http://pngimg.com/uploads/mosquito/mosquito_PNG18175.png"
+                    alt="mosquito"
+                    />
+                <div class="subcons two">Thành phần:</div>
+            </button>
+            </li>
+            <li>
+            <button class="choose-insect-btn elderly">
+                <p>ELDERLY</p>
+                <img
+                    src="http://pngimg.com/uploads/spider/spider_PNG12.png"
+                    alt="spider"
+                    />
+                <div class="subcons three">Thành phần:</div>
+            </button>
+            
+            </li>
+        </ul>
+        </div>
+        
+
+    </body>
+</html>

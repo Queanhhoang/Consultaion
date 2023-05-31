@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
+* {
+box-sizing: border-box;
+margin: 0;
+}
+
+p{
+line-height: 1.4;
+display: block;
+position: relative;
+bottom: 6rem;
+}
+/* #girl{
+    background-image: url(./girl.png);
+    background-size:cover;
+    display: block;
+    width:1431;
+    height:714px;
+    background-position: bottom right;
+    position:relative;
+    right:300px;
+    z-index: -2; }*/
+
+body, select, button {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    color: #003F2E;
+    background-image: url(./girl.png);
+    background-position: top right;
+}
+#header{
+    height:46px;
+    background-color:#fff;
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index: 1;
+    box-shadow: 0 0 10px rgb(0,0,0,0.3);
+}
+#nav{
+    display:inline-block;
+}
+#nav .subnav {
+    list-style-type: none;
+}
+#nav > li{
+    display:inline-block;
+}
+#nav li{
+    position:relative;
+    width: auto;
+    height: 46px;
+    border-radius: 5px black;
+}
+/* Thẻ li cấp 1 */
+#nav >li >a{
+    color:rgba(0, 0, 0, 1);
+    ;
+    /* Viết hoa */
+    /* text-transform: uppercase; */
+}
+#nav li a{
+    text-decoration: none;
+    line-height:46px; 
+    padding: 0 24px;
+    font-family: 'Montserrat', sans-serif;
+    display:inline-block;
+}
+#nav li:hover a{
+    background-color: rgba(97,177,90,45%);
+    font-weight:900;
+    /* border-radius: 10px black; */
+
+    
+
+}
+#qu{
+    color:black;
+    
+}
+button {
+    margin-bottom: 10px;
+    background-color: #003F2E;
+    color: #E6E6DE;
+    border-radius: 5px;
+}
+body {
+    background-color: #fff;
+}
+#inputsContainer, #resultsContainer, #infoContainer {
+    background-color: rgba(97,177,90,45%);
+    color: #003F2E;
+    border-radius: 5px;
+    display: table;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+    z-index: 1;
+    position:relative;
+    top: 4rem;
+}
+#resultsContainer, #infoContainer {
+    text-align: center;
+    line-height: 150%;
+    padding: 5px 0px 5px 0px;
+
+    visibility: collapse;
+}
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+img{
+    display:none;
+}
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    transition: margin 0.5s ease-out;
+    position:relative;
+}
+
+.screen.up {
+    margin-top: -100vh;
+}
+
+.insects-list {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+list-style-type: none;
+padding: 0;
+}
+
+.insects-list li {
+margin: 10px;
+}
+
+.choose-insect-btn {
+background-color: transparent;
+border: 2px solid #fff;
+color: #fff;
+cursor: pointer;
+font-family: inherit;
+width: 150px;
+height: 150px;
+}
+.kid {
+background-image: url("kid.jpg");
+background-size:cover;
+background-position: center;
+}
+.teenage{
+background-image: url("./sandwish.png");
+background-size:cover;
+background-position: center;
+}
+.adult{
+background-image: url("adult.jpg");
+background-size:cover;
+background-position: center;
+}
+.elderly{
+background-image: url("elderly.jpg");
+background-size:cover;
+background-position: center;
+}
+/* .choose-insect-btn:hover {
+color: #516dff;
+} */
+button.choose-insect-btn{
+    position:relative;
+    color:black
+}
+.choose-insect-btn:active .subcons{
+color:black;
+display:block;
+
+} 
+.choose-insect-btn:hover {
+color: #516dff;
+text-align: center;
+
+    }
+.subcons{
+    display:none; 
+    width:120px;
+    height:60px;
+    position:absolute;
+    top:10rem;
+    border:#fff;
+    color:#fff;
+    text-align: center;
+}
+
+/* .choose-insect-btn:hover .subcons.one {
+    display:inline-block;
+    color:#fff;
+    background-color: black;
+    } */
+
+/* .choose-insect-btn:active {
+background-color: rgba(255, 255, 255, 0.7);
+} */
+
+.choose-insect-btn img {
+width: 100px;
+height: 100px;
+object-fit: contain;
+}
+.insect {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.insect.caught {
+transform: translate(-50%, -50%) scale(0);
+}
+
+.insect img {
+width: 100px;
+height: 100px;
+}
