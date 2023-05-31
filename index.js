@@ -137,22 +137,22 @@ function printOutput(TDEE, BMI, gender, age) {
     age = parseFloat(age);
 
     if (BMI < 18.5) {
-        BMI_RANGE = "underweight";
+        BMI_RANGE = "suy dinh dưỡng";
     }
     else if (BMI < 25) {
-        BMI_RANGE = "healthy";
+        BMI_RANGE = "khoẻ mạnh";
     }
     else if (BMI < 30) {
-        BMI_RANGE = "overweight";
+        BMI_RANGE = "thừa cân";
     }
     else {
-        BMI_RANGE = "obese";
+        BMI_RANGE = "béo phì";
     }
     if (age >= 3 && age <= 18) {
         age_menu = "Trẻ em";
     
         if (age >= 13 && age <= 18) {
-            age_menu = "Teenage";
+            age_menu = "Vị thành niên";
             value = "Đây là tuổi dậy thì nên dinh dưỡng buổi sáng là cần: <br/>\
             Uống đủ nước, tăng cường vận động thể thao ngoài trời, ngủ sớm và đủ giấc, bổ sung các loại vitamin \
             Tăng cường canxi cho trẻ bằng thực phẩm hoặc viên uống";
@@ -174,10 +174,10 @@ function printOutput(TDEE, BMI, gender, age) {
         }
     }
     else if (age > 18 && age <= 50) {
-        age_menu = "Adult";
+        age_menu = "Người trưởng thành";
     }
     else if (age > 50 && age <= 70) {
-        age_menu = "Elderly";
+        age_menu = "Người cao ";
         suggest = "Lời khuyên: <br/> Khẩu phần ăn đủ nhu cầu và cân đối các chất dinh dưỡng gồm: Chất đạm, béo, tinh bột, vitamin, khoáng chất, nước và chất xơ;\
         Chế biến thức ăn dễ tiêu hóa, nên có món canh trong bữa ăn;\
         Không bỏ qua bất kỳ bữa ăn nào trong ngày;\
