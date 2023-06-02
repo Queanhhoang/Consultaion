@@ -199,7 +199,7 @@ function printOutput(TDEE, BMI, gender, age) {
 
 
     let resultsHTML = 
-        `Thực đơn phù hợp với bạn is ${age_menu}<br/>
+        `Thực đơn phù hợp với bạn is <strong> ${age_menu} </strong><br/>
         Để giảm 2 kg/tuần, ăn <strong>${(Math.max(TDEE - 1000, safeMinCalories))*0,45359237 }</strong> calories mỗi ngày.<br/>
         Để giảm 1 kg/tuần, ăn <strong>${(Math.max(TDEE - 500, safeMinCalories))*0,45359237 }</strong> calories mỗi ngày.<br/>
         Để duy trì cân nặng, ăn <strong>${(Math.max(TDEE, safeMinCalories))*0,45359237 }</strong> calories mỗi ngày.<br/>
