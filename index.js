@@ -188,68 +188,7 @@ function printOutput(TDEE, BMI, gender, age) {
         age_menu = "none";
     }
     
-    
-    // if (age>=3 && age<=18) {
-    //     age_menu="Trẻ ";
-    //     if(age>=13 && age<=18){
-    //         age_menu="Teenage"
-    //         value="Đây là tuổi dậy thì nên dinh dưỡng buổi sáng là cần: Uống đủ nước, tăng cường vận động thể thao ngoài trời, ngủ sớm và đủ giấc, bổ sung các loại vitamin <br/> Tăng cường canxi cho trẻ bằng thực phẩm hoặc viên uống"
-    //     }
-    //     else value=""
-    //     if (gender==="M"){
-    //         result=""
-    //     }
-    //     // ! tìm hiểu note
-    //     else if(gender==="F"&& age>=13 && age<=18){
-    //         result="Bổ sung chất sắt (20mg sắt/ngày) <br/> Bằng thực phẩm (thịt,gà,cá,trứng,các loaị hạt và đậu)<br/> viên uống(sử dụng trước giờ ăn sáng hoặc ăn trưa) "
-    //     }
-    //     if(age>=3 && age<=12 && BMI < 18.5){
-    //         suggest="Lời khuyên: bổ sung thức ăn kèm cho buổi sáng: <br/> .Phô mai <br/> .Sữa"
-    //     }
-    //     else if(age>=3 && age<=12 && BMI > 25) {
-    //         suggest="Lời khuyên: cho trẻ tập luyện thể thao(bơi,võ,.),<br/> giảm ăn các loại thức ăn nhanh(khoai tây chiên, gà rán,..  "
-    //     }
-
-
-    //     // img_menu= url('./z4329164133215_7e4b508396de3c2365ab4f774746a912.jpg')
-    // }
-    // else if (age>18 && age<=50) {
-    //     age_menu="Adult";
-    //     // request="To lose 2 lbs/week, eat <strong>${Math.max(TDEE - 1000, safeMinCalories)}</strong> calories per day.<br/>To lose 1 lbs/week, eat <strong>${Math.max(TDEE - 500, safeMinCalories)}</strong> calories per day.<br/>To maintain weight, eat <strong>${Math.max(TDEE, safeMinCalories)}</strong> calories per day.<br/>To gain 1 lbs/week, eat <strong>${Math.max(TDEE + 500, safeMinCalories)}</strong> calories per day.<br/>To gain 2 lbs/week, eat <strong>${Math.max(TDEE + 1000, safeMinCalories)}</strong> calories per day. "
-    // }
-    // else if (age>50 && age<=70) {
-    //     age_menu="Elderly";
-    // }
-    // else{
-    //     age_menu = "none"
-    // }
-    // ! tìm hiểu lại
-
-    // if (!gender==="M" && BMI < 18.5) {
-    //     result="Bạn nên tăng "
-        
-
-    // }
-    // else  {
-    //     result="Bạn "
-    // }
-
-    
-// function printOutput1(age) {
-//     safeMinCalories = (gender === "M") ? MIN_CAL_MALE : MIN_CAL_FEMALE;
-
-//     age = parseFloat(age);
-
-//     if (age>=3 && age<=18) {
-//         age_menu="Kid";
-//     }
-//     else if (age>18 && age<=50) {
-//         age_menu="Adult";
-//     }
-//     else if (age>50 && age<=70) {
-//         age_menu="Elderly";
-//     }
-// }
+  
 
 
     let infoHTML = 
