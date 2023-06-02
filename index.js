@@ -253,19 +253,19 @@ function printOutput(TDEE, BMI, gender, age) {
 
 
     let infoHTML = 
-        `Your TDEE is <strong>${Math.round((Math.max(TDEE, safeMinCalories)*0.2))}</strong> calories in breakfast.
+        `TDEE của bạn là <strong>${Math.round((Math.max(TDEE, safeMinCalories)*0.2))}</strong> calories mỗi buổi sáng.
         <br/>
-        Your BMI is <strong>${BMI}</strong>, which is <strong>${BMI_RANGE}</strong>.;
+         BMI của bạn là <strong>${BMI}</strong>, which is <strong>${BMI_RANGE}</strong>.;
         <br/> ${value} <hr/>${result}`
 
 
     let resultsHTML = 
-        `Your suitable menu is ${age_menu}<br/>
-        To lose 2 lbs/week, eat <strong>${Math.max(TDEE - 1000, safeMinCalories)}</strong> calories per day.<br/>
-        To lose 1 lbs/week, eat <strong>${Math.max(TDEE - 500, safeMinCalories)}</strong> calories per day.<br/>
-        To maintain weight, eat <strong>${Math.max(TDEE, safeMinCalories)}</strong> calories per day.<br/>
-        To gain 1 lbs/week, eat <strong>${Math.max(TDEE + 500, safeMinCalories)}</strong> calories per day.<br/>
-        To gain 2 lbs/week, eat <strong>${Math.max(TDEE + 1000, safeMinCalories)}</strong> calories per day.
+        `Thực đơn phù hợp với bạn is ${age_menu}<br/>
+        Để giảm 2 kg/tuần, ăn <strong>${(Math.max(TDEE - 1000, safeMinCalories))*0,45359237 }</strong> calories mỗi ngày.<br/>
+        Để giảm 1 kg/tuần, ăn <strong>${(Math.max(TDEE - 500, safeMinCalories))*0,45359237 }</strong> calories mỗi ngày.<br/>
+        Để duy trì cân nặng, ăn <strong>${(Math.max(TDEE, safeMinCalories))*0,45359237 }</strong> calories mỗi ngày.<br/>
+        Để tăng 1 kg/tuần, ăn <strong>${(Math.max(TDEE + 500, safeMinCalories))*0,45359237 }</strong> calories mỗi ngày.<br/>
+        Để tăng 2 kg/tuần, ăn <strong>${(Math.max(TDEE + 1000, safeMinCalories))*0,45359237 }</strong> calories mỗi ngày.
         <hr/>${suggest}
          `
 
