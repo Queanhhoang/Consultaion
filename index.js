@@ -177,7 +177,7 @@ function printOutput(TDEE, BMI, gender, age) {
         age_menu = "Người trưởng thành";
     }
     else if (age > 50 && age <= 70) {
-        age_menu = "Người cao ";
+        age_menu = "Người cao  ";
         suggest = "Lời khuyên: <br/> Khẩu phần ăn đủ nhu cầu và cân đối các chất dinh dưỡng gồm: Chất đạm, béo, tinh bột, vitamin, khoáng chất, nước và chất xơ;\
         Chế biến thức ăn dễ tiêu hóa, nên có món canh trong bữa ăn;\
         Không bỏ qua bất kỳ bữa ăn nào trong ngày;\
