@@ -30,6 +30,7 @@ body, select, button {
     color: #003F2E;
     background: url(./girl.png) no-repeat;
     background-position: top right;
+    
 }
 #header{
     height:46px;
@@ -126,12 +127,28 @@ body {
         left:0;
         
     }
+    /* #header #nav{
+        position:absolute;
+        top:100%; left:0; 
+        width: 100px;
+        background:rgba(97,177,90,45%);
+        border-top:1px solid rgba(0,0,0,.1);
+        z-index: 5;
+    }
+    #header #nav li {
+        position: relative;
+        right:30px;
+        display:block;
+        
+    }
+    #inputsContainer table{
+        z-index: -2;
+    } */
 }
 @media (min-width:1782px) {
     body{
         background: none;
     }
-
 }
 #inputsContainer, #resultsContainer, #infoContainer {
     background-color: rgba(97,177,90,45%);
